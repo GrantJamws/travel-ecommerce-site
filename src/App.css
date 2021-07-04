@@ -4,9 +4,34 @@ body {
 
 .App {
   display: flex;
+  flex-wrap: nowrap;
 }
 
 .hotel-cards-container {
   width: 70vw;
-  padding: 50px;
+  padding: 50px 25px;
+}
+
+.filters-container {
+  width: 30vw;
+  padding: 50px 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  .App {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hotel-cards-container {
+    width: 100vw;
+    padding: 25px;
+    display: grid;
+    justify-content: center;
+  }
+  
+  .filters-container {
+    width: 100vw;
+    padding: 25px;
+  }
 }

@@ -109,3 +109,18 @@
     color: rgb(254, 213, 48);
     margin-bottom: 8px;
 }
+
+@media screen and (max-width: 1200px) {
+    .hotel-card {
+        margin: 0px;
+        margin-bottom: 50px;
+    }
+
+    .hotel-card .hotel-image {
+        width: 100%;
+    }
+
+    .hotel-card .hotel-info {
+        width: calc(100% - 40px);
+    }
+}

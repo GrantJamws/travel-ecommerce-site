@@ -1,7 +1,14 @@
 .Filters {
-    width: 30vw;
-    padding: 50px;
+    width: 100%;
     display: grid;
     align-content: baseline;
     justify-items: end;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .Filters {
+        justify-items: center;
+    }
 }

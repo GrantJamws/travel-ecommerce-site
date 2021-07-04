@@ -1,7 +1,7 @@
 .Filter {
     font-size: 10pt;
     height: 60px;
-    width: 100%;
+    width: calc(100% - 30px);
     max-width: 350px;
     padding: 0px 15px;
     border-bottom: 2px solid rgb(21, 46, 113);
@@ -38,4 +38,11 @@
 
 .Filter.selected svg {
     color: #fff;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .Filter {
+        max-width: 720px;
+    }
 }

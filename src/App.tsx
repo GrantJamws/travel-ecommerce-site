@@ -80,9 +80,12 @@ function App() {
   return (
     <div className="App">
       <div className="background-image"/>
-      <Filters
-        onClick={onFilterClick}
-        filters={filters}/>
+      <div
+        className="filters-container">
+        <Filters
+          onClick={onFilterClick}
+          filters={filters}/>
+      </div>
       <div
         className="hotel-cards-container">
         { hotelData?.map((hotel: Hotel, index: number) => <HotelCard key={index} hotel={hotel}/>) }
