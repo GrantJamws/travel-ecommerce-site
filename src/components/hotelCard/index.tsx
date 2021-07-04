@@ -43,7 +43,8 @@ const HotelCard: FC<HotelCardProps> = ({ hotel }): JSX.Element => {
     <div className="hotel-card">
       <img
         className="hotel-image"
-        src={hotel.imageURL}/>
+        src={hotel.imageURL}
+        alt={hotel.name}/>
       <div
         className="hotel-info">
         <p className="name">{hotel.name}</p>
@@ -57,7 +58,7 @@ const HotelCard: FC<HotelCardProps> = ({ hotel }): JSX.Element => {
         <button
           className="book-now">
           <span className="text">Book Now</span>
-          <span className="price">£{ hotel.price }</span>
+          <span className="price">{ new Intl.NumberFormat("en-GB", {style: "currency", currency: "GBP"}).format(hotel.price) }</span>
         </button>
       </div>
       <button

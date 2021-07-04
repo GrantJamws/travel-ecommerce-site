@@ -4,13 +4,19 @@ import Filter from './filter';
 import './styles.css';
 
 interface FiltersProps {
-  filters: FilterType[]
+  filters: FilterType[],
+  onClick: Function
 }
 
-const Filters: FC<FiltersProps> = ({ filters }): JSX.Element => {
+const Filters: FC<FiltersProps> = ({ filters, onClick }): JSX.Element => {
+
+  const onFilterClick = (filter: string) => {
+    onClick(filter);
+  }
+
   return (
     <div className="Filters">
-      { filters.map((filter: FilterType, index: number) => <Filter filter={filter}/>) }
+      { filters.map((filter: FilterType, index: number) => <Filter key={index} onClick={onFilterClick} filter={filter}/>) }
     </div>
   );
 }

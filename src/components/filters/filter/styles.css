@@ -7,7 +7,9 @@
     text-align: left;
     background-color: #fff;
     color: rgb(21, 46, 113);
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .Filter.selected {
@@ -24,14 +26,15 @@
     font-size: 14pt;
 }
 
-.Filter .name.bold {
+.Filter .name .bold {
     font-weight: bold;
 }
 
-.Filter .icon {
-    position: absolute;
-    right: 0px;
-    top: 0px;
+.Filter svg {
     font-size: 30px;
-    margin: 15px 20px;
+    color: rgb(206, 206, 206);
+}
+
+.Filter.selected svg {
+    color: #fff;
 }
