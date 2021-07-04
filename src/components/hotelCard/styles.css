@@ -81,6 +81,12 @@
     padding: 5px 20px;
 }
 
+.hotel-card button.show-overview .MuiSvgIcon-root {
+    font-size: 11pt;
+    position: relative;
+    top: 2px;
+}
+
 .hotel-card button.show-overview .bold {
     font-weight: bold;
 }
@@ -88,5 +94,11 @@
 .hotel-card .overview {
     width: 100%;
     background-color: #fff;
-    padding: 20px;
+    padding: 10px 20px;
+    font-size: 10pt;
+}
+
+.hotel-card .overview .title {
+    color: rgb(21, 46, 113);
+    font-weight: bold;
 }

@@ -1,6 +1,7 @@
 import './styles.css';
 import { Hotel } from '../../type/Hotel';
 import { FC, useState } from 'react';
+import { ExpandMore, ChevronRight } from '@material-ui/icons';
 
 interface HotelCardProps {
   hotel: Hotel
@@ -61,7 +62,7 @@ const HotelCard: FC<HotelCardProps> = ({ hotel }): JSX.Element => {
         className="show-overview"
         onClick={showOverviewClick}>
         {
-          showOverview ? <span><span className="bold">Read less</span> about this hotel &#xf107;</span> : <span><span className="bold">Read more</span> about this hotel &#xf105;</span>
+          showOverview ? <span><span className="bold">Read less</span> about this hotel <ExpandMore/></span> : <span><span className="bold">Read more</span> about this hotel <ChevronRight/></span>
         }
       </button>
       {
