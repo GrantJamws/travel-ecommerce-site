@@ -1,0 +1,10 @@
+.HotelCard {
+    background-color: #fff;
+}
+
+.HotelCard button.book-now {
+    background-color: yellow;
+    color: darkblue;
+    border: none;
+    border-radius: 5pt;
+}

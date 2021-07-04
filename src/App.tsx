@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import Filters from './components/filters';
+import HotelCard from './components/hotelCard';
+import { HOTELDATA } from './data/hotelData';
+import { Hotel } from './type/Hotel';
+
 function App() {
+  const hotelData: Hotel[] = HOTELDATA;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Weclome to On the Beach</h1>
+      <Filters/>
+      { hotelData.map((hotel: Hotel, index: number) => <HotelCard key={index} hotel={hotel}/>) }
     </div>
   );
 }
