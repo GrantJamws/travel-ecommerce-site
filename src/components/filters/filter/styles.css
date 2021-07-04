@@ -1,4 +1,21 @@
 .Filter {
-    font-size: 56pt;
-    color: blue;
+    font-size: 10pt;
+    height: 55px;
+    width: 100%;
+    padding: none;
+    margin: none;
+    border-bottom: 2px solid rgb(21, 46, 113);
+    text-align: left;
+    background-color: #fff;
+    color: rgb(21, 46, 113);
+}
+
+.Filter.selected {
+    background-color: rgb(21, 46, 113);
+    color: #fff;
+}
+
+
+.Filter:last-child {
+    border-bottom: none;
 }

@@ -1,4 +1,6 @@
 .Filters {
-    font-size: 56pt;
-    color: red;
+    width: 30vw;
+    padding: 50px;
+    display: grid;
+    align-content: baseline;
 }
