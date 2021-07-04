@@ -2,7 +2,7 @@
 
 This code will produce a sortable list of Holidays, the code has been created with the ability to add more entries into the website easily.
 
-To view an example of the site go to [travel.gworsley.com](travel.gworsley.com)
+To view an example of the site go to [travel.gworsley.com](http://travel.gworsley.com)
 
 ## Available Scripts
 
