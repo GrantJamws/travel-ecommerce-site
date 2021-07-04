@@ -1,7 +1,7 @@
 import './styles.css';
 import { Hotel } from '../../type/Hotel';
 import { FC, useState } from 'react';
-import { ExpandMore, ChevronRight } from '@material-ui/icons';
+import { ExpandMore, ChevronRight, Star } from '@material-ui/icons';
 
 interface HotelCardProps {
   hotel: Hotel
@@ -48,7 +48,9 @@ const HotelCard: FC<HotelCardProps> = ({ hotel }): JSX.Element => {
         className="hotel-info">
         <p className="name">{hotel.name}</p>
         <p className="location">{hotel.location}</p>
-        <p>{hotel.rating}</p>
+        <div className="rating">
+          {[...Array(hotel.rating)].map((star, index) => <Star/>)}
+        </div>
         {roomSizeText()}
         <p><span className="key-stat">{hotel.date}</span> for <span className="key-stat">{hotel.length}</span></p>
         <p>departing from <span className="key-stat">{hotel.departing}</span></p>

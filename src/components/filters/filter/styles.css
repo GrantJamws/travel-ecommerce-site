@@ -1,13 +1,13 @@
 .Filter {
     font-size: 10pt;
-    height: 55px;
+    height: 60px;
     width: 100%;
-    padding: none;
-    margin: none;
+    padding: 0px 15px;
     border-bottom: 2px solid rgb(21, 46, 113);
     text-align: left;
     background-color: #fff;
     color: rgb(21, 46, 113);
+    position: relative;
 }
 
 .Filter.selected {
@@ -18,4 +18,20 @@
 
 .Filter:last-child {
     border-bottom: none;
+}
+
+.Filter .name {
+    font-size: 14pt;
+}
+
+.Filter .name.bold {
+    font-weight: bold;
+}
+
+.Filter .icon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 30px;
+    margin: 15px 20px;
 }

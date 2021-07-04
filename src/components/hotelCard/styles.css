@@ -33,13 +33,13 @@
     color: rgb(21, 46, 113);
     font-weight: bold;
     font-size: 14pt;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .hotel-card .hotel-info .location {
     color: rgb(135, 135, 135);
     font-size: 11pt;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .hotel-card button.book-now {
@@ -101,4 +101,9 @@
 .hotel-card .overview .title {
     color: rgb(21, 46, 113);
     font-weight: bold;
+}
+
+.hotel-card .hotel-info .rating {
+    color: rgb(254, 213, 48);
+    margin-bottom: 8px;
 }

@@ -1,6 +1,7 @@
 import './styles.css';
 import { FC } from 'react';
 import { Filter as FilterType } from '../../../type/Filter';
+import { SortByAlpha } from '@material-ui/icons';
 
 interface FilterProps {
   filter: FilterType;
@@ -9,7 +10,9 @@ interface FilterProps {
 const Filter: FC<FilterProps> = ({ filter }): JSX.Element => {
   return (
     <div className={ filter.selected ? "Filter selected" : "Filter"}>
-      <h1>{filter.name}</h1>
+      <p className="name">{filter.name}</p>
+      <SortByAlpha
+        className="icon"/>
     </div>
   );
 }
