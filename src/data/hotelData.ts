@@ -2,6 +2,7 @@ import { Hotel } from "../type/Hotel";
 
 export const HOTELDATA: Hotel[] = [
     {
+        id: 1,
         name: "Iberostar Grand Salome",
         location: "Costa Adeje, Tenerife",
         rating: 5,
@@ -18,6 +19,7 @@ export const HOTELDATA: Hotel[] = [
         imageURL: "./assets/hotel-image-1.png"
     },
     {
+        id: 2,
         name: "Aguamarina Golf Hotel",
         location: "Costa Adeje, Tenerife",
         rating: 4,
@@ -33,6 +35,7 @@ export const HOTELDATA: Hotel[] = [
         imageURL: "./assets/hotel-image-2.png"
     },
     {
+        id: 3,
         name: "Las Piramides Resort",
         location: "Costa Adeje, Tenerife",
         rating: 3,
