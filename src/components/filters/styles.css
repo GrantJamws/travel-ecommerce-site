@@ -3,4 +3,5 @@
     padding: 50px;
     display: grid;
     align-content: baseline;
+    justify-items: end;
 }
