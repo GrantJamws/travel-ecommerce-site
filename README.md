@@ -28,4 +28,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `yarn test`
 
-Runs the apps tests. Tests are contained within src/__tests__
+Runs the apps tests. Tests are contained within `src/__tests__`
