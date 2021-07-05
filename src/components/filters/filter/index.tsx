@@ -16,7 +16,8 @@ const Filter: FC<FilterProps> = ({ filter, onClick }): JSX.Element => {
   return (
     <div
       className={ filter.selected ? "Filter selected" : "Filter"}
-      onClick={onFilterClick}>
+      onClick={onFilterClick}
+      title={ filter.name }>
       <p className="name">
         {filter.text} <span className="bold">{filter.name}</span>
       </p>

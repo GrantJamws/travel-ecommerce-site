@@ -21,7 +21,6 @@ const HotelCard: FC<HotelCardProps> = ({ hotel }): JSX.Element => {
     if(hotel.roomSize.adults){
       adultJSX = <span><span className="key-stat">{ hotel.roomSize.adults }</span> {hotel.roomSize.adults > 1 ? "Adults" : "Adult"}</span>;
     }
-    
     if(hotel.roomSize.children){
       childrenJSX = <span><span className="key-stat">{ hotel.roomSize.children }</span> {hotel.roomSize.children > 1 ? "children" : "child"}</span>;
     }
@@ -29,7 +28,8 @@ const HotelCard: FC<HotelCardProps> = ({ hotel }): JSX.Element => {
       infantsJSX = <span><span className="key-stat">{ hotel.roomSize.infants }</span> {hotel.roomSize.infants > 1 ? "infants" : "infant"}</span>;
     }
     return (
-      <p>
+      <p
+        className="room-size">
         {adultJSX}
         {childrenJSX && ", "}
         {childrenJSX}
@@ -40,7 +40,9 @@ const HotelCard: FC<HotelCardProps> = ({ hotel }): JSX.Element => {
   }
   
   return (
-    <div className="hotel-card">
+    <div
+      title={hotel.name}
+      className="hotel-card">
       <img
         className="hotel-image"
         src={hotel.imageURL}
