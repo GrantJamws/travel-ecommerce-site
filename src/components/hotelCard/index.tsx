@@ -50,7 +50,7 @@ const HotelCard: FC<HotelCardProps> = ({ hotel }): JSX.Element => {
         <p className="name">{hotel.name}</p>
         <p className="location">{hotel.location}</p>
         <div className="rating">
-          {[...Array(hotel.rating)].map((star, index) => <Star/>)}
+          {[...Array(hotel.rating)].map((_, index) => <Star key={index}/>)}
         </div>
         {roomSizeText()}
         <p><span className="key-stat">{hotel.date}</span> for <span className="key-stat">{hotel.length}</span></p>
